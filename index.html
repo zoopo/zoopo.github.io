@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>±Ê¼Ç±¾</h1>
+<div>
+<li>init.gradle</li>
+allprojects {
+    repositories {
+         maven {
+             name "oschinaRepo"
+             url "http://maven.aliyun.com/nexus/content/groups/public/"
+         }
+    }
+}
+</div>
+gradle.properties
+org.gradle.daemon=true
+org.gradle.jvmargs=-Xmx1048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+org.gradle.configureondemand=true
 </body>
 </html>
